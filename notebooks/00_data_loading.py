@@ -1,1 +1,14 @@
+import pandas as pd
 
+file_path = "/Users/dianagomes/Secretária/work/s2/telco_churn_project/data"
+
+demographics = pd.read_excel(file_path + "Telco_customer_churn_demographics.xlsx")
+location = pd.read_excel(file_path + "Telco_customer_churn_location.xlsx")
+population = pd.read_excel(file_path + "Telco_customer_churn_population.xlsx")
+services = pd.read_excel(file_path + "Telco_customer_churn_services.xlsx")
+status = pd.read_excel(file_path + "Telco_customer_churn_status.xlsx")
+
+for df in [demographics, location, population, services, status]:
+    print(df.shape)
+    print(df.head())
+    df.info()  
