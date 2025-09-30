@@ -1,0 +1,9 @@
+name: telco_churn
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - openpyxl
+  - jupyter
+  - ipykernel
